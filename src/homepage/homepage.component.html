@@ -1,0 +1,15 @@
+<p [ngStyle]="{'color':colore}">{{testo}}</p>
+<button (click)="cambiaColore()">CAMBIA</button>
+
+<!--
+{{}}: one way binding, stampa valore ts in html
+(): event-binding, html richiama funzione ts
+[]: property binding, leghiamo un attributo HTML a TS
+[()]: two way binding, lega in maniera bidirezionale
+casella input con valore TS
+-->
+<button (click)="cambiaImmagine()">CAMBIA</button>
+
+<img [src]="oggettoComplesso.campo1" />
+{{oggettoComplesso.campo1}}
+<input [(ngModel)]="colore">
