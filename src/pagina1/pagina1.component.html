@@ -1,2 +1,10 @@
 <input [(ngModel)]="messaggio">
 <button (click)="spedisci()">Manda Messaggio</button>
+<div *ngFor="let t of travelers">
+  {{t.name}}
+</div>
+
+
+<div>
+  <h1>NOME TRAVELER CON ID 2: {{singoloTravelers.name}}</h1>
+</div>
